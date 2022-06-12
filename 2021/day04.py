@@ -1,15 +1,9 @@
-import sys
-import itertools
 import numpy as np
 
 day = '04'
 
-def split_int(word):
-    return [int(char) for char in word]
-
 with open(f'2021\inputs\day{day}.txt', 'r') as f:
     lines = f.readlines()
-   # bits = np.array([(split_int(line.strip())) for line in lines])
     f.close()
 
 drawn_numbers = [int(n) for n in lines[0].split(',')]
