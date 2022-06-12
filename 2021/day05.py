@@ -1,5 +1,5 @@
 import itertools
-import collections
+from collections import Counter
 
 
 day = '05'
@@ -59,7 +59,7 @@ def create_lines(coords, diag_lines=False):
 def count_overlaps(coords, diag_lines=False):
     lines = create_lines(coords, diag_lines)
     line_coords = list(itertools.chain(*lines))
-    overlapping_coords = collections.Counter(line_coords)
+    overlapping_coords = Counter(line_coords)
     mask = [1 if x > 1 else 0 for x in overlapping_coords.values()]
     return sum(mask)
 
