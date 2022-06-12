@@ -55,7 +55,7 @@ def play_bingo(bingo_cards_array, marked_cards_array, drawn_numbers):
 
 print(f'Part 1: {play_bingo(bingo_cards_array, marked_cards_array, drawn_numbers)[2]}')
 
-# Part 2
+# Part 2 - Not a nice soln
 cards_remaining = len(bingo_cards_array)
 while cards_remaining > 1:
     result = play_bingo(bingo_cards_array, marked_cards_array, drawn_numbers)
