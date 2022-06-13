@@ -1,6 +1,4 @@
-from re import X
 import numpy as np
-import math
 
 day = '07'
 
