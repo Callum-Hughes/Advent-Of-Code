@@ -20,12 +20,5 @@ def calc_fuel_f(h_pos, func):
         i+=1
     return fuel
 
-def calc_part_one(x): 
-    return x
-
-def calc_part_two(x): 
-    return 0.5*x*(x+1)
-
-#print(calc_part_one(np.array([1,2])))
-print(f'Part 1: {calc_fuel_f(h_pos, calc_part_one)}')
-print(f'Part 2: {calc_fuel_f(h_pos, calc_part_two)}')
+print(f'Part 1: {calc_fuel_f(h_pos, lambda x:x)}')
+print(f'Part 2: {calc_fuel_f(h_pos, lambda x: 0.5*x*(x+1))}')
