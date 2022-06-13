@@ -12,7 +12,7 @@ with open(f'2021\inputs\day{day}.txt', 'r') as f:
 def calc_fuel_f(h_pos, func):
     fuel = sum(func(np.array(h_pos)))
     fuel_step = fuel
-    i=0
+    i=1
     while fuel_step <= fuel:
         fuel = fuel_step
         diff = np.abs(np.array(h_pos)-i)
